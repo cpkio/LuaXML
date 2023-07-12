@@ -1209,10 +1209,10 @@ int _EXPORT luaopen_LuaXML_lib (lua_State* L) {
 	// register default codes
 	// Note: We'll always handle "&amp;" separately!
 	lua_newtable(L);
-	lua_pushliteral(L, "&lt;");
-	lua_setfield(L, -2, "<");
-	lua_pushliteral(L, "&gt;");
-	lua_setfield(L, -2, ">");
+	// lua_pushliteral(L, "&lt;");
+	// lua_setfield(L, -2, "<");
+	// lua_pushliteral(L, "&gt;");
+	// lua_setfield(L, -2, ">");
 	lua_pushliteral(L, "&quot;");
 	lua_setfield(L, -2, "\"");
 	lua_pushliteral(L, "&apos;");
