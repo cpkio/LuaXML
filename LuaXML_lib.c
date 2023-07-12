@@ -105,8 +105,8 @@ static void push_indentStr(lua_State *L, int level) {
 	}
 	luaL_Buffer b;
 	luaL_buffinit(L, &b);
-	//while (level-- > 0) luaL_addlstring(&b, "  ", 2);
-	while (level-- > 0) luaL_addchar(&b, '\t'); // one TAB char per level
+	while (level-- > 0) luaL_addlstring(&b, "    ", 4);
+	// while (level-- > 0) luaL_addchar(&b, '\t'); // one TAB char per level
 	luaL_pushresult(&b);
 }
 
